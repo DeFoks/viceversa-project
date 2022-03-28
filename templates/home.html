@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <h1>Vice Vers</h1>
-<form action ="{% url 'reverse'%}">
+<form action="{% url 'reverse' %}">
     <textarea autofocus cols="50" rows="6" name = "TextReverse" id="TextReverse">
-    
+        
     </textarea>
     <p></p>
     <input type="submit" value="Reverse!">
 </form>  
+<br>
+<form>
+    <textarea cols="50" rows="6" name = "TextReverse2" id="TextReverse2">
+        {{TextReverse3}}
+    </textarea>
+    <p></p>
+    <input type="submit" value="TextReverse!" >
+</form> 
 
